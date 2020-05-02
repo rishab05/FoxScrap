@@ -28,30 +28,28 @@ $ cd webapp
 ```
 Run the server
 ```
-$ python manage.py runsrever
+$ python manage.py runserver
 ```
 After you open localhost go to /products
 
 You will see this login interface
-![Alt text](/Screenshots/login.png?raw=true "LogIn")
+![](Screenshots/login.png?raw=true "LogIn")
 
-You can sign up for a new account or use this account:
-email- eliot@gmail.com  pswd- eliot
+You can sign up for a new account or use(email- eliot@gmail.com  pswd- eliot)
 
 After SignIn index page will open:
-![Alt text](/Screenshots/home.png?raw=true "home")
+![Alt text](Screenshots/home.png?raw=true "home")
 
 When you click on an Product its detail will open
-![Alt text](/Screenshots/details.png?raw=true "product")
+![](Screenshots/details.png?raw=true "product")
 
-![Alt text](/Screenshots/searching.png?raw=true "other")
+![](Screenshots/searching.png?raw=true "other")
 
 Amazon.json and flipkart.json are files which was created by using webscraping. (educational purpose only)
 You can see olddata file for see the original json file.
 
-Built With
-Django - The web framework used
-Python - Programming Language
 
 
-Created with love by Rishabh Sharma
+
+
+Created with :heart: by Rishabh Sharma
