@@ -1,0 +1,158 @@
+{%extends 'products/base.html'%}
+{%block body%}
+{%load static%}
+
+<style>
+#main {
+margin-top:90px;
+}
+
+#image {
+position:absolute;
+left:90px;
+top:165px;
+}
+.checked {
+  color: blueviolet;
+}
+h3 {
+font-family: 'Aclonica';
+font-size:22pt;
+}
+</style>
+
+<div id="main">
+
+<div><h3><b>{{product.name}}</b></h3></div>
+
+<div id="image"><img src="{%static product.image%}" width="300" height="400"></div>
+
+
+<div id="list">
+<table id="t0">
+<tr>
+<th>Seller</th>
+<th>Price</th>
+<th>Details</th>
+</tr>
+
+<tr id="fake1">
+<td>Amazon&nbsp;&nbsp;<img src="https://s3.ap-south-1.amazonaws.com/files.supersmartdeals.com/Content/images/promotions/2017/9/20/SP300.jpg" height="36" width="36"></td>
+<td id="aprice">₹ {{product.selection2}}</td>
+
+
+
+<td><center><a class="anchor" href="{{product.selection2_url}}" target="_blank"><button class="buybutton" style="vertical-align:middle"><span>Buy</span></button></a></center></td>
+</tr>
+
+<tr id="fake2">
+<td>Flipkart&nbsp;&nbsp;<img src="https://s3.ap-south-1.amazonaws.com/files.supersmartdeals.com/Content/images/promotions/2017/9/20/SP297.jpg" height="36" width="36"></td>
+<td id="fprice">₹ {{product.f_price}}</td>
+<td><a class="anchor" href="{{product.f_price_url}}" target="_blank"><button class="buybutton" style="vertical-align:middle"><span>Buy</span></button></a></td>
+</tr>
+<tr>
+    <td> </td>
+    <td></td>
+    <td></td>
+
+</tr>
+<tr>
+    <th><b>Features</b></th>
+    <th></th>
+    <th>Description</th>
+    </tr>
+    <tr>
+        <td>opearting system</td>
+        <td></td>
+        <td>{{product.selection3}}</td>
+        </tr>
+        <tr>
+            <td> camera</td>
+            <td>{{product.selection5}}</td>
+            <td>{{product.selection6}}</td>
+
+        </tr>
+        <tr>
+                <td>display</td>
+                <td></td>
+                <td>{{product.selection4}}</td>
+        </tr>
+        <tr>
+            <td>RAM</td>
+            <td></td>
+            <td>{{product.selection7}}</td>
+    </tr>
+    <tr>
+        <td>Battery</td>
+        <td></td>
+        <td>{{product.selection8}}</td>
+</tr>
+<tr>
+    <td>Processor</td>
+    <td></td>
+    <td>{{product.selection9}}</td>
+</tr>
+<tr>
+    <td>Storage</td>
+    <td></td>
+    <td>{{product.selection10}}</td>
+</tr>
+<tr>
+    <td>Network</td>
+    <td></td>
+    <td>{{product.selection11}}</td>
+</tr>
+<tr>
+    <td>Launch Date</td>
+    <td></td>
+    <td>{{product.selection12}}</td>
+</tr>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<tr>
+    <td>Rating by Amazon</td>
+    <td>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star half checked"></span>
+        <span class="fa fa-star"></span></td>
+    <td>{{product.selection13}}</td>
+</tr><tr>
+    <td>Rating by Flipkart</td>
+    <td><span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star half checked"></span>
+        <span class="fa fa-star"></span></td></td>
+    <td>{{product.selection14}}</td>
+</tr>
+
+
+
+</table>
+</div>
+
+<div id="compare" class="effect1 effect2">
+<table id="t">
+<tr>
+<th id="cbth">Compare By</th>
+</tr>
+<tr>
+<td><button class="sortbutton" onclick="sort(1)"><b>Price -- Low to High</button></b></td>
+</tr>
+<tr>
+<td><button class="sortbutton" onclick="sort(2)"><b>Price -- High to Low</button></b></td>
+</tr>
+</table>
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+{%endblock%}
