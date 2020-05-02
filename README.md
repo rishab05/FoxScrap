@@ -48,7 +48,10 @@ When you click on an Product its detail will open
 Amazon.json and flipkart.json are files which was created by using webscraping. (educational purpose only)
 You can see olddata file for see the original json file.
 
-
+### Deployment
+For deployment I used python anywhere which is free you can see its website for more information.
+Link of Live website
+### http://rishab05.pythonanywhere.com/products/
 
 
 
